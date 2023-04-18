@@ -11,11 +11,12 @@ if [ -e .env ]; then
 else
     echo "It seems you didn´t create your .env file, so we will create one for you."
     cp .env.example .env
+    source .env
     # exit 1
 fi
 
 # 1. Check if .env file exists
-if [[ -e opts/sites-available/app.conf ]]; then
+if [[ ! -f opts/sites-available/app.conf ]]; then
     cp opts/sites-available/app.conf.example opts/sites-available/app.conf
 fi
 

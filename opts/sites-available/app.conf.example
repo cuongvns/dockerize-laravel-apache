@@ -1,5 +1,5 @@
 <VirtualHost *:80>
-    ServerAdmin webmaster@vietsalon.vn
+    ServerAdmin webmaster@example.com
     ServerName localhost
     DocumentRoot /var/www/html/public
     ErrorLog ${APACHE_LOG_DIR}/error.log
